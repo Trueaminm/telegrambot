@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: 7345061819:AAHUwfP9PNQT--W3N1W5Uz_58__0k2gzlpE
+      - key: OPENAI_API_KEY
+        value: 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
